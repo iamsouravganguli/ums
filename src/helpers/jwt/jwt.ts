@@ -35,7 +35,6 @@ export const JWT = {
         expiresIn: '30d',
         issuer: 'Sourav Ganguli',
         subject: 'Auth',
-        jwtid: '',
       });
       return Promise.resolve({
         token: token,
@@ -77,6 +76,7 @@ export const JWT = {
       const jwtString = req?.body?.refresh_token;
       if (!jwtString) {
         return Promise.reject({
+          code: 105,
           status: false,
           message: 'Please enter refresh token',
         });
@@ -94,11 +94,6 @@ export const JWT = {
             status: false,
             message: 'User does not exist',
           });
-          // return Promise.reject({
-          //   status: true,
-          //   message: '',
-          //   data: payload,
-          // });
         } else {
           return Promise.resolve({
             status: true,
@@ -118,8 +113,7 @@ export const JWT = {
       return Promise.reject({
         code: 105,
         status: false,
-        message: '',
-        error: e,
+        message: e.message,
       });
     }
   },
