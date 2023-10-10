@@ -26,6 +26,7 @@ To use UMS in development mode, follow these steps:
 
 1. Clone the code repository.
 2. Execute the following two commands in your terminal:
+3. Postman Collection https://documenter.getpostman.com/view/13984733/2s9YJhyLT7#intro
 
 ```bash
 npm run build:watch
