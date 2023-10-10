@@ -15,7 +15,6 @@
 /build
 /
 test
-esbuild.config.js
 # misc
 .DS_Store
 *.pem
