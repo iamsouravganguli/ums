@@ -11,7 +11,7 @@ const app: Express = express();
 //Request json body middleware init.
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use([Routes.authentication]);
+app.use(Routes.authentication);
 app.use(AuthorizationMiddleware);
 app.use([Routes.profile, Routes.refresh]);
 //Single thread server init.

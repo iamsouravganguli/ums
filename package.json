@@ -24,7 +24,9 @@
     "mysql": "^2.18.1",
     "node-rsa": "^1.1.1",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.3.17"
+    "typeorm": "^0.3.17",
+    "zod": "^3.22.4",
+    "zod-express-middleware": "^1.4.0"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",

@@ -28,7 +28,7 @@ export const AuthUserService = async (req: Request) => {
       } else {
         return Promise.resolve({
           status: true,
-          message: 'Sign in successfully completed',
+          message: 'Sign in successfully',
           data: {
             access: await JWT.access_token({
               id: existingUser.id,
