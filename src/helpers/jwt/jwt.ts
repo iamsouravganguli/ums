@@ -102,7 +102,7 @@ export const JWT = {
         } else {
           return Promise.resolve({
             status: true,
-            message: 'Refresh in successfully completed',
+            message: 'Token Refresh Successfully',
             data: {
               access: await JWT.access_token({
                 id: existingUser.id,
